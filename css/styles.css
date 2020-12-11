@@ -109,7 +109,7 @@ i {
   border-left: 20px solid var(--colorOrange);
   margin-top: 10%;
 }
-#session-two span {
+span {
   color: var(--colorOrange);
   display: block;
 }
@@ -148,6 +148,30 @@ i {
 }
 
 /*SESSION FIVE*/
+#session-five {
+  background-image: url(/image/background.svg);
+}
+#session-five .btn {
+  padding: 8px 45px;
+  background-color: var(--colorOrange);
+  color: var(--colorWhite);
+}
+.form-control {
+  background-color: transparent;
+}
+.form-control:focus {
+  color: var(--colorOrange);
+  border-color: var(--colorOrange);
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: var(--colorGreyDark);
+  color: #dce1da;
+}
 
 /*Media Query*/
 
