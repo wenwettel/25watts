@@ -36,7 +36,7 @@ h1 {
   padding: 0;
 }
 
-/*Carousel*/
+/*HEADER*/
 
 .image-slide {
   height: 100vh;
@@ -143,6 +143,12 @@ i {
 
 /*SESSION FOUR*/
 
+.size-image img {
+  width: 100%;
+}
+
+/*SESSION FIVE*/
+
 /*Media Query*/
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -151,11 +157,16 @@ i {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  #session-four .position-absolute {
+  #session-four #accordion {
+    position: absolute;
     top: 50%;
     left: 10%;
     right: 40%;
     transform: translatey(-50%);
+  }
+
+  .size-image img {
+    width: 50%;
   }
 }
 
