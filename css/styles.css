@@ -149,7 +149,7 @@ span {
 
 /*SECTION THREE*/
 #sec-three {
-  background-image: url(image/background.svg);
+  background-image: url(../image/background.svg);
   height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,11 +186,11 @@ span {
 }
 
 #sec-three .carousel-control-next-icon {
-  background-image: url(image/Icon\ feather-arrow-right-circle.svg);
+  background-image: url(../image/Icon\ feather-arrow-right-circle.svg);
 }
 
 #sec-three .carousel-control-prev-icon {
-  background-image: url(image/Icon\ arrow-left-.svg);
+  background-image: url(../image/Icon\ arrow-left-.svg);
 }
 
 /*SECTION FOUR*/
@@ -227,7 +227,7 @@ span {
 
 /*SECTION FIVE*/
 #sec-five {
-  background-image: url(image/background.svg);
+  background-image: url(../image/background.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
