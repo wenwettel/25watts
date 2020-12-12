@@ -11,6 +11,7 @@
 html {
   font-family: var(--fontRoboto);
   size: 16px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -25,33 +26,59 @@ h5 {
   font-family: var(--fontPoppins);
 }
 
-h1 {
-  font-size: 48px;
-}
-
-#nav {
-  width: 80%;
-}
 .container-fluid {
   padding: 0;
 }
 
+/*Navegation*/
+.navbar {
+  padding: 0;
+}
+
+#navbarToggler {
+  background-color: var(--colorOrange);
+}
+
+.navbar-toggler {
+  background-color: var(--colorWhite);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--colorOrange);
+}
+
+#navegation {
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+/*Class scroll js*/
+
+#navegation.scroll {
+  background-color: var(--colorOrange);
+}
+#navegation.scroll a:hover {
+  border-bottom: 2px solid var(--colorWhite);
+}
+
+a:hover {
+  color: var(--colorWhite);
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-bottom: 2px solid var(--colorWhite);
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  padding: 1.5rem 1rem;
+}
+
 /*HEADER*/
 
-.image-slide {
-  height: 100vh;
-}
-
 #carousel {
-  position: relative;
   z-index: -1;
-}
-
-#carousel .carousel-indicators {
-  justify-content: left;
-  margin-right: 0;
-  margin-left: 10%;
-  margin-bottom: 10%;
 }
 
 .carousel-indicators li {
@@ -85,7 +112,7 @@ h1 {
   color: var(--colorWhite);
 }
 
-/*SESSION ONE*/
+/*SECTION ONE*/
 
 .box {
   display: flex;
@@ -104,54 +131,107 @@ i {
   font-size: 42px;
 }
 
-/*SESSION TWO*/
-#session-two {
+/*SECTION TWO*/
+#sec-two .container {
   border-left: 20px solid var(--colorOrange);
-  margin-top: 10%;
+  margin: 0;
 }
+
+#sec-two {
+  padding-top: 70px;
+  margin-bottom: 90px;
+}
+
 span {
   color: var(--colorOrange);
   display: block;
 }
 
-/*SESSION THREE*/
-#session-three {
+/*SECTION THREE*/
+#sec-three {
   background-image: url(/image/background.svg);
-  height: 600px;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#session-three .position-relative {
+#sec-three .position-relative {
   margin: auto;
 }
 
 #carousel-text {
+  padding-bottom: 50px;
   background-color: var(--colorOrange);
-
-  bottom: 0;
-  right: 0;
   color: var(--colorWhite);
-  height: 55%;
-  width: 50%;
-  padding: 40px;
+
+  padding: 10px 25px;
 }
-#carousel-text h5 {
-  font-size: 39px;
-}
+
 #carousel-text p {
   margin-bottom: 0;
+  margin-top: 15px;
 }
 
-/*SESSION FOUR*/
+#sec-three .carousel-control-next,
+#sec-three .carousel-control-prev {
+  top: unset;
+  bottom: 15px;
+  width: 30px;
+  right: 20px;
+}
+
+#sec-three .carousel-control-prev {
+  right: 60px;
+  left: unset;
+}
+
+#sec-three .carousel-control-next-icon {
+  background-image: url(/image/Icon\ feather-arrow-right-circle.svg);
+}
+
+#sec-three .carousel-control-prev-icon {
+  background-image: url(/image/Icon\ arrow-left-.svg);
+}
+
+/*SECTION FOUR*/
+
+.accordion button {
+  display: flex;
+  align-items: center;
+}
+
+.accordion button .up-arrow,
+.accordion button .down-arrow {
+  margin-left: auto;
+}
+
+.accordion button .up-arrow {
+  display: inline-block;
+}
+
+.accordion button .down-arrow {
+  display: none;
+}
+
+.accordion button.collapsed .up-arrow {
+  display: none;
+}
+
+.accordion button.collapsed .down-arrow {
+  display: inline-block;
+}
 
 .size-image img {
   width: 100%;
 }
 
-/*SESSION FIVE*/
-#session-five {
+/*SECTION FIVE*/
+#sec-five {
   background-image: url(/image/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#session-five .btn {
+#sec-five .btn {
   padding: 8px 45px;
   background-color: var(--colorOrange);
   color: var(--colorWhite);
@@ -181,7 +261,28 @@ footer {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  #session-four #accordion {
+  #nav {
+    width: 100%;
+  }
+
+  #nav img {
+    margin-right: auto;
+  }
+
+  #navbarToggler {
+    height: 68px;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  #carousel .carousel-indicators {
+    justify-content: left;
+    margin-right: 0;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+
+  #sec-four #accordion {
     position: absolute;
     top: 50%;
     left: 10%;
@@ -192,22 +293,48 @@ footer {
   .size-image img {
     width: 50%;
   }
+
+  .nav-tabs .nav-link {
+    display: flex;
+    padding: 1.5rem 1rem;
+    align-items: center;
+  }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  #session-one {
+  main {
+    position: relative;
+    margin-top: 300px;
+  }
+  #sec-one {
     position: absolute;
-    top: 95%;
+    top: -330px;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  #session-two {
-    margin: 28% 0 10% 0;
+  #carousel-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    width: 55%;
+  }
+
+  #carousel-text h5 {
+    font-size: 39px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  #sec-three {
+    height: 800px;
+  }
+  #carousel-text {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+  }
 }
