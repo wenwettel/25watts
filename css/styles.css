@@ -101,7 +101,7 @@ h5 {
 /*contain carousel-image*/
 
 #carousel-image .contain {
-  width: 50%;
+  width: 70%;
 }
 
 #carousel-image img {
@@ -315,6 +315,10 @@ footer {
   }
   #carousel-image img {
     height: 100%;
+  }
+
+  #carousel-image .contain {
+    width: 50%;
   }
 
   #carousel-image .contain h1 {
