@@ -62,7 +62,7 @@
       </div>
       <!--Carousel imagen-->
       <div
-        id="carousel"
+        id="carousel-image"
         class="carousel slide position-relative"
         data-ride="carousel"
       >
@@ -80,7 +80,7 @@
                 alt="First slide"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <div class="contain">
                 <h1>Sed ut Perspiciatis unde omnis iste natus</h1>
                 <p>
@@ -105,7 +105,7 @@
                 alt="Second slide"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <div class="contain">
                 <h1>Proin elementum massa et felis</h1>
                 <p>
@@ -130,7 +130,7 @@
                 alt="Third slide"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <div class="contain">
                 <h1>Nulla rhoncus vulputate congue</h1>
                 <p>
@@ -149,8 +149,8 @@
     </header>
     <main id="main">
       <!--section one-->
-      <div id="sec-one" class="container">
-        <div class="absolute row row-col row-cols-sm-2">
+      <section id="sec-one" class="container">
+        <div class="row row-col row-cols-sm-2">
           <div class="mx-3 mx-sm-0 col-sm-6 col-lg-3">
             <div class="box">
               <i class="fas fa-globe-americas"></i>
@@ -176,16 +176,19 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--end sec one-->
 
       <!--section two-->
-      <div id="sec-two">
+      <section id="sec-two">
         <div class="container">
           <div class="row">
             <div class="col-1 col-md-2"></div>
             <div class="col">
-              <h2>We Help Businesses <span>Grow and Innovate</span></h2>
+              <h2>
+                We Help Businesses
+                <span class="block-orange">Grow and Innovate</span>
+              </h2>
               <p class="mt-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent et maximus sapien, vitae consequat augue. Nunc justo
@@ -202,11 +205,11 @@
             <div class="col-1 col-md-2"></div>
           </div>
         </div>
-      </div>
+      </section>
       <!--end sec two-->
 
       <!--section three-->
-      <div id="sec-three" class="d-flex">
+      <section id="sec-three" class="d-flex">
         <div
           class="position-relative container-fluid col-11 col-sm-10 col-md-9 col-lg-8"
         >
@@ -265,7 +268,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
       <!--end section three-->
 
       <!--end section four-->
@@ -405,14 +408,19 @@
 
       <!--section five-->
       <section id="sec-five">
-        <div class="d-flex align-items-center justify-content-center py-5">
-          <!--Formulario-->
+        <div
+          class="d-flex flex-column-reverse flex-sm-row align-items-center justify-content-center py-5"
+        >
+          <!--Form-->
           <form
+            id="form-contact"
             action="#"
-            class="needs-validation col col-md-5 my-5 mr-5"
+            class="needs-validation col col-md-5 my-5 mr-sm-5"
             novalidate
           >
-            <h2>Get in touch <span>We are hiring!</span></h2>
+            <h2>
+              Get in touch <span class="block-orange">We are hiring!</span>
+            </h2>
             <div class="">
               <label class="mt-5" for="name"></label>
               <input
@@ -422,9 +430,9 @@
                 id="name"
                 required
               />
-
-              <div class="invalid-feedback">Por favor complete el campo.</div>
+              <div class="invalid-feedback">Please complete the field.</div>
             </div>
+
             <div class="form-group">
               <label for="email"></label>
               <input
@@ -435,9 +443,7 @@
                 required
               />
 
-              <div class="invalid-feedback">
-                Por favor ingrese un email válido.
-              </div>
+              <div class="invalid-feedback">Please enter a valid email.</div>
             </div>
             <div class="form-group">
               <label for="phone"></label>
@@ -449,7 +455,7 @@
                 required
               />
 
-              <div class="invalid-feedback">Por favor complete el campo.</div>
+              <div class="invalid-feedback">Please complete the field.</div>
             </div>
             <div class="form-group">
               <label for="message"></label>
@@ -461,13 +467,14 @@
                 required
               />
 
-              <div class="invalid-feedback">Por favor ingrese un mensaje</div>
+              <div class="invalid-feedback">Please enter a message</div>
             </div>
             <button type="submit" class="btn rounded-pill active my-4">
               Send
             </button>
           </form>
-          <div class="d-none d-sm-block col-sm-5">
+          <!--end form-->
+          <div class="col-sm-5">
             <img class="w-100" src="image/globos.png" alt="globos" />
           </div>
         </div>
