@@ -72,7 +72,7 @@ h5 {
 #navegation.scroll {
   background-color: var(--colorOrange);
 }
-#navegation.scroll a:hover {
+#navegation.scroll #navbarToggler a:hover {
   border-bottom: 2px solid var(--colorWhite);
 }
 
@@ -120,6 +120,8 @@ h5 {
   background-color: var(--colorOrange);
   color: var(--colorWhite);
   margin-bottom: 15px;
+  font-weight: 500;
+  padding: 8px 22px;
 }
 
 /*SECTION ONE*/
@@ -164,7 +166,7 @@ span.block-orange {
 
 /*SECTION THREE*/
 #sec-three {
-  background-image: url(../images/background.svg);
+  background-image: url(..images/background.svg);
   height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -279,10 +281,6 @@ footer {
 
 /*MEDIA QUERY*/
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-}
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   #nav {
@@ -387,5 +385,32 @@ footer {
     display: flex;
     align-items: center;
     padding: 10px 50px;
+  }
+}
+
+/*Query Person (Monitor)*/
+
+@media (min-width: 1317px) {
+  p {
+    font-size: 23px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 50px;
+  }
+  #carousel-image a.btn {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  #sec-four .size-image img {
+    width: 950px;
+  }
+
+  #sec-four #accordion {
+    left: 15%;
   }
 }

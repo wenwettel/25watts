@@ -28,9 +28,8 @@
 // scroll nav
 
 var nav = document.getElementById("navegation");
-console.log(nav);
+
 window.addEventListener("scroll", function (e) {
-  console.log(window.pageYOffset);
   var scrollPos = window.pageYOffset;
 
   if (scrollPos !== 0) {
